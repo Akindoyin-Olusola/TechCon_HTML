@@ -1,0 +1,151 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}/* Videos Section */
+.videos-section {
+    background: #ffffff;
+    padding: 80px 20px;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 300;
+    color: #071629;
+    margin-bottom: 60px;
+}
+
+.highlight {
+    color: #C271FF;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(194, 113, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: #C271FF;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #071629;
+    margin: 15px;
+    text-align: left;
+}
+
+.video-description {
+    font-size: 14px;
+    color: #071629;
+    opacity: 0.7;
+    margin: 0 15px 15px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.video-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 15px 15px;
+}
+
+.author-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+}
+
+.video-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px 15px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars i {
+    color: #C271FF;
+    font-size: 12px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: 600;
+}
